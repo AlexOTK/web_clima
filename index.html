@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Clima - Autlan</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <img id="logo" src="img/udg.png"></img>
+            <div class="logo_name">Univercidad de Guadalajara</div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <a href="index.html">
+                    <i class='bx bx-cloud'></i>
+                    <span class="links_name">Inicio</span>
+                </a>
+                <span class="tooltip">Inicio</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-trending-up'></i>
+                    <span class="links_name">Estadisticas</span>
+                </a>
+                <span class="tooltip">Estadisticas</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-landscape'></i>
+                    <span class="links_name">Mapa</span>
+                </a>
+                <span class="tooltip">Mapa</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-user"></i>
+                    <span class="links_name">Conocenos</span>
+                </a>
+                <span class="tooltip">Conocenos</span>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <div class="contenedor">
+            <div class="multimedia">
+                <div class="hover"></div>
+                <video onloadedmetadata="this.muted = true" autoplay loop>
+                    <source src="img/nubes.mp4" />
+                </video>
+            </div>
+            <div class="fechaHora">
+                <img src="img/cloudy.png" alt="" id="datosImg" />
+                <div class="datos">
+                    <h2 for="" id="dia"></h2>
+                    <h2 id="hora"></h2>
+                </div>
+                <div class="lugar">
+                    <label for="">
+                        <h2>Autlan de Navarro, Jal.</h2>
+                    </label>
+                </div>
+            </div>
+            <div class="imagenCentro">
+                <img src="img/cloudy.png" alt="" id="climaDelDia" />
+                <label for="" id="temDia">
+                    <h2>28°</h2>
+                </label>
+            </div>
+            <div class="climaSemanal">
+                <div class="clima">
+                    <div class="tar"></div>
+                    <div class="tarDatos">
+                        <img src="img/cloudy.png" alt="" class="imgSemanal" />
+                        <label for="" class="txtSemanal">
+                            <h2>Semi Nublado</h2>
+                        </label>
+                    </div>
+                </div>
+                <div class="clima">
+                    <div class="tar"></div>
+                    <div class="tarDatos">
+                        <img src="img/stratuscumulus.png" alt="" class="imgSemanal" />
+                        <label for="" class="txtSemanal">
+                            <h2>Nublado</h2>
+                        </label>
+                    </div>
+                </div>
+                <div class="clima">
+                    <div class="tar"></div>
+                    <div class="tarDatos">
+                        <img src="img/cloud (1).png" alt="" class="imgSemanal" />
+                        <label for="" class="txtSemanal">
+                            <h2>Despejado</h2>
+                        </label>
+                    </div>
+                </div>
+                <div class="clima">
+                    <div class="tar"></div>
+                    <div class="tarDatos">
+                        <img src="img/thunder.png" alt="" class="imgSemanal" />
+                        <label for="" class="txtSemanal">
+                            <h2>Truenos</h2>
+                        </label>
+                    </div>
+                </div>
+                <div class="clima">
+                    <div class="tar"></div>
+                    <div class="tarDatos">
+                        <img src="img/rain.png" alt="" class="imgSemanal" />
+                        <label for="" class="txtSemanal">
+                            <h2>Lluvioso</h2>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
